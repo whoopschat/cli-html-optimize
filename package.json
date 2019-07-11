@@ -1,0 +1,27 @@
+{
+  "name": "cli-html-optimize",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "description": "html optimize cli",
+  "author": "liangmayong",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoopschat/cli-apk-repack.git"
+  },
+  "keywords": [
+    "cli-html-optimize"
+  ],
+  "files": [
+    "lib"
+  ],
+  "bin": {
+    "cli-html-optimize": "./lib/cli.js"
+  },
+  "dependencies": {
+    "crypto": "1.0.1"
+  }
+}
