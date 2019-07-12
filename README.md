@@ -9,4 +9,8 @@
 ### usage
 ```
 > cli-html-optimize ./dist
+
+or 
+
+> cli-html-optimize ./dist offline
 ```
