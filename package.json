@@ -1,6 +1,6 @@
 {
   "name": "cli-html-optimize",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "main": "lib/index.js",
   "description": "html optimize cli",
   "author": "liangmayong",
