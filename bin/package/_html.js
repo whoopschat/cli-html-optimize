@@ -31,8 +31,8 @@ function style(file, html, merge) {
     return html.replace(nodeRegex, function (mh) {
         var hrefs = mh.match(hrefRegex);
         if (hrefs && hrefs.length > 1) {
-            var href = hrefs[1];
-            var nodeFile = path.join(path.dirname(file), href).split(" ")[0];
+            var href = hrefs[1].split(" ")[0];
+            var nodeFile = path.join(path.dirname(file), href);
             if (fs.existsSync(nodeFile)) {
                 var ext = path.extname(nodeFile);
                 if (ext == ".css") {
@@ -66,8 +66,8 @@ function script(file, html, merge) {
     return html.replace(nodeRegex, function (mh) {
         var srcs = mh.match(srcRegex);
         if (srcs && srcs.length > 1) {
-            var src = srcs[1];
-            var nodeFile = path.join(path.dirname(file), src).split(" ")[0];
+            var src = srcs[1].split(" ")[0];
+            var nodeFile = path.join(path.dirname(file), src);
             if (fs.existsSync(nodeFile)) {
                 if (useFiles.indexOf(nodeFile) >= 0) {
                     return "";
