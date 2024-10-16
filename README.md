@@ -12,6 +12,7 @@
 Usage: cli-html-optimize [options]
   --src                src path
   --zipFileName        zip file name
-  --mergeFlag          res merge
+  --zipMd5File         zip md5 file name
+  --resMerge           style and js file merge
   --help               show help
 ```

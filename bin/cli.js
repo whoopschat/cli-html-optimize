@@ -5,12 +5,11 @@ const program = minimist(process.argv.slice(2), []);
 const optimize = require(".");
 
 if (program.help) {
-  console.log("");
-  console.log("");
   console.log("Usage: cli-html-optimize [options]");
   console.log("  --src                src path");
   console.log("  --zipFileName        zip file name");
-  console.log("  --mergeFlag          res merge enable");
+  console.log("  --zipMd5File         zip md5 file name");
+  console.log("  --resMerge           style and js file merge");
   console.log("  --help               show help");
   console.log("");
   console.log("");
@@ -25,7 +24,7 @@ if (!program.src) {
 
 (function () {
   var dist = path.join(process.cwd(), program.src);
-  optimize(dist, program.mergeFlag, program.zipFileName).then(() => {
+  optimize(dist, !!program.resMerge, program.zipFileName).then(() => {
     console.log("------------------------------------------");
     console.log("html optimize done.");
     console.log("------------------------------------------");
