@@ -8,5 +8,10 @@
 
 ### usage
 ```
-> cli-html-optimize ./dist
+> cli-html-optimize
+Usage: cli-html-optimize [options]
+  --src                src path
+  --zipFileName        zip file name
+  --mergeFlag          res merge
+  --help               show help
 ```

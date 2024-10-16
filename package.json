@@ -1,6 +1,6 @@
 {
   "name": "cli-html-optimize",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "main": "bin/index.js",
   "description": "html optimize cli",
   "author": "liangmayong",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whoopschat/cli-apk-repack.git"
+    "url": "git+https://github.com/whoopschat/cli-html-optimize.git"
   },
   "keywords": [
     "cli-html-optimize"
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "crypto": "1.0.1",
+    "minimist": "^1.2.0",
     "archiver": "3.1.1"
   }
 }
